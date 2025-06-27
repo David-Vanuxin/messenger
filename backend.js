@@ -16,7 +16,7 @@ rl.on("line", line => {
 
 rl.on("SIGINT", () => process.exit(0))
 
-const indexPageContent = readFileSync(__dirname + '/index.html').toString()
+const indexPageContent = readFileSync(__dirname + '/frontend.html').toString()
 
 const server = http.createServer((req, res) => {
   if (req.method === "GET") {
